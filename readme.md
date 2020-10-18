@@ -28,7 +28,7 @@ Project is created with:
 
 ### Launch
 
-The app is available [here]( "rock, paper & scissors")
+The app is available [here](https://bevviemarsh.github.io/rock-paper-scissors/ "rock, paper & scissors")
 
 #### Project Status
 
