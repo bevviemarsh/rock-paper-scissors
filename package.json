@@ -1,0 +1,23 @@
+{
+  "name": "rock_paper_scissors_game",
+  "version": "1.0.0",
+  "description": "interpretation of popular social game",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "npm test -- --watchAll"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "d3": "^6.1.1",
+    "d3-scale": "^3.2.3",
+    "d3-tip": "^0.9.1",
+    "lodash": "^4.17.20",
+    "redux": "^4.0.5",
+    "watchify": "^3.11.1"
+  },
+  "devDependencies": {
+    "jest": "^26.4.2"
+  }
+}

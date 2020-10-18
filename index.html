@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Rock, paper, scissors</title>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid-container__header">
+        <h1 class="grid-container__header--text">Rock-paper-scissors</h1>
+      </div>
+      <div class="grid-container__player-move">
+        <div
+          id="player-move"
+          class="grid-container__player-move--rock"
+          data-option="rock"
+        >
+          Rock
+        </div>
+        <div
+          id="player-move"
+          class="grid-container__player-move--paper"
+          data-option="paper"
+        >
+          Paper
+        </div>
+        <div
+          id="player-move"
+          class="grid-container__player-move--scizzors"
+          data-option="scizzors"
+        >
+          Scissors
+        </div>
+      </div>
+      <div class="grid-container__play">
+        <button id="play-btn" class="grid-container__play--btn">
+          New Game
+        </button>
+      </div>
+      <div class="grid-container__lollipop-chart">
+        <div id="lollipop-chart">
+          <p class="grid-container__lollipop-chart--title">
+            The most winning move
+          </p>
+        </div>
+      </div>
+      <div class="grid-container__ai-move">
+        <p class="grid-container__ai-move--title">AI Move</p>
+        <div
+          id="ai-move-option"
+          class="grid-container__ai-move--container"
+        ></div>
+      </div>
+      <div class="grid-container__result">
+        <p id="result-text" class="grid-container__result--text"></p>
+      </div>
+      <div class="grid-container__pie-chart">
+        <div id="player-pie-chart">
+          <p class="grid-container__pie-chart--title">Player Moves</p>
+        </div>
+        <div id="ai-pie-chart">
+          <p class="grid-container__pie-chart--title">AI Moves</p>
+        </div>
+      </div>
+      <div class="grid-container__bar-chart">
+        <div id="bar-chart">
+          <p class="grid-container__bar-chart--title">Result stats</p>
+        </div>
+      </div>
+      <div class="grid-container__reset">
+        <button id="reset-btn" class="grid-container__reset--btn">Reset</button>
+      </div>
+    </div>
+
+    <script src="static/bundle.js"></script>
+  </body>
+</html>
