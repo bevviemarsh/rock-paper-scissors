@@ -1574,6 +1574,7 @@ function publishResult(store, result) {
 module.exports.publishResult = publishResult;
 
 },{"../charts/data/data":7,"../store/actions/moves":32,"../store/actions/stats":34,"../store/actions/winningGame":35,"../utils/elements/elements":42,"../utils/factory/DOMElementsFactory":43,"./getWinningMove":26}],29:[function(require,module,exports){
+const { getWinningMove } = require("./getWinningMove");
 const { getDataCleared } = require("../store/actions/reset");
 const { fetchData } = require("../charts/data/data");
 const { DOMElementsFactory } = require("../utils/factory/DOMElementsFactory");
@@ -1599,7 +1600,7 @@ function resetDOMElements() {
 
 function resetGame(store) {
   store.dispatch(getDataCleared());
-
+  getWinningMove(store);
   resetGraphs(store.getState());
   resetDOMElements();
 }
@@ -1607,7 +1608,7 @@ function resetGame(store) {
 module.exports.resetGame = resetGame;
 module.exports.resetDOMElements = resetDOMElements;
 
-},{"../charts/data/data":7,"../store/actions/reset":33,"../utils/actions/actions":41,"../utils/elements/elements":42,"../utils/factory/DOMElementsFactory":43,"lodash":79}],30:[function(require,module,exports){
+},{"../charts/data/data":7,"../store/actions/reset":33,"../utils/actions/actions":41,"../utils/elements/elements":42,"../utils/factory/DOMElementsFactory":43,"./getWinningMove":26,"lodash":79}],30:[function(require,module,exports){
 const { handleAiMove } = require("./aiMove");
 const { DOMElementsFactory } = require("../utils/factory/DOMElementsFactory");
 const { elements, styledElements } = require("../utils/elements/elements");

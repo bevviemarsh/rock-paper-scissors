@@ -1,3 +1,4 @@
+const { getWinningMove } = require("./getWinningMove");
 const { getDataCleared } = require("../store/actions/reset");
 const { fetchData } = require("../charts/data/data");
 const { DOMElementsFactory } = require("../utils/factory/DOMElementsFactory");
@@ -23,7 +24,7 @@ function resetDOMElements() {
 
 function resetGame(store) {
   store.dispatch(getDataCleared());
-
+  getWinningMove(store);
   resetGraphs(store.getState());
   resetDOMElements();
 }
